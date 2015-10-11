@@ -1,0 +1,10 @@
+MainActivity.java - activity_main.xml
+StudentDetail.java - activity_student_detail.java
+view_student_entry.xml
+
+for db:
+Student.java
+DBHelper.java
+StudentRepo.java
+
+

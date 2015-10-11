@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="1dp"
+        android:src="@drawable/back_info"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/firstrowMainPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CreateTaskTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="GoToCreateTaskPage"
+                android:text="CREATE TASK"
+                android:textSize="25sp"
+                android:gravity="left|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/home_activity_button" />
+            <TextView
+                android:id="@+id/WorkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WORKSPACE"
+                android:clickable="true"
+                android:onClick="ToDisplayTasksFromHome"
+                android:textSize="25sp"
+                android:layout_margin="5dp"
+                android:gravity="left|center"
+                android:background="@drawable/home_activity_button"/>
+            <TextView
+                android:id="@+id/ProgressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROGRESS"
+                android:clickable="true"
+                android:onClick="ToProgressFromHome"
+                android:textSize="25sp"
+                android:layout_margin="5dp"
+                android:gravity="left|center"
+                android:background="@drawable/home_activity_button"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

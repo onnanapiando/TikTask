@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/createtasktopnavbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="#ff842c22">
+
+        <ImageView
+            android:id="@+id/createtaskbackbuttonid"
+            android:clickable="true"
+            android:onClick="GoHomeFromCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/backbutton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Task"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/createtasktopnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/task_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter" />
+
+
+            <TextView
+                android:id="@+id/title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="Task Name "
+                android:textSize="40sp"
+                android:gravity = "center"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff845f5c"/>
+            <EditText
+                android:id="@+id/title_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="4dp"
+                android:hint="Title of the task"
+                android:inputType="textMultiLine"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/type_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="Type: "
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff845f5c" />
+            <RadioGroup
+                android:id="@+id/radioType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radiowork"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radiomisc"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Misc" />
+
+
+            </RadioGroup>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff845f5c" />
+            <TextView
+                android:id="@+id/desc_texView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="Description: "
+                android:textSize="40sp"
+                android:gravity = "center"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff845f5c"/>
+            <EditText
+                android:id="@+id/desc_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="4dp"
+                android:hint="Description of the task"
+                android:inputType="textMultiLine"
+                android:textSize="40sp" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Duration"
+            android:clickable="true"
+            android:onClick="GoToAddDurationPage"
+            android:background="#ff842c22"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="GoToTaskActivity"
+            android:text="Add task"
+            android:background="#ff842c22"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

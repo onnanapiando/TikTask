@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff842c22" >
+
+    <LinearLayout
+        android:id="@+id/countdowntopnavbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff842c22"
+        android:gravity="top">
+
+        <ImageView
+            android:id="@+id/countdownbackbuttonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Work Timer"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/countdowntopnavbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/buttonsForTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  >
+
+                    <Button
+                        android:id="@+id/btnStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#ff93463b"
+                        android:text="Start" />
+
+                    <Button
+                        android:id="@+id/btnPauseTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#ff93463b"
+                        android:text="Pause" />
+
+
+                    <Button
+                        android:id="@+id/btnStopTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#ff93463b"
+                        android:text="Stop" />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_below="@+id/buttonsForTimer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center"
+                    android:text="take a break"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:background="#ff93463b"/>
+                </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvTimeCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:paddingRight="10dip"
+                android:text=" "
+                android:textColor="#ffffff"
+                android:textSize="50dp" />
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+
+

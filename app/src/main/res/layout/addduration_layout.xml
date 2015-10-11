@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/createtasktopnavbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff842c22"
+        android:gravity="top">
+
+        <ImageView
+            android:id="@+id/addDurationbackbuttonid"
+            android:clickable="true"
+            android:onClick="ToCreateTaskFromAddDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Duration"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/createtasktopnavbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/durationHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" hours" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/durationMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" minutes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/durationSeconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" seconds" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/inputTimeDuration"
+            android:clickable="true"
+            android:onClick="GoTotaskActivityFromAddDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff842c22"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
